@@ -1,0 +1,63 @@
+.flexContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 33%;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 20px;;
+}
+
+body {
+    background-image: url(/Images/background\ image2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Projects {
+    font-size: 20px;
+}
+
+.mySkills {
+    font-size: 30px;
+}
+
+.myWork {
+    font-size: 30px;
+}
+button {
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    background-color: #DAF7DC;
+    border-radius: 10px;
+    display: flex;
+}
+@media only screen and (max-width: 700px) {
+    .flexContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        grid-column-gap: 20px;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        grid-column-gap: 20px;
+    }
+    .myWork {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        grid-column-gap: 20px;
+    }
+    
+}
